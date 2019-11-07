@@ -1,11 +1,234 @@
 <html lang="en">
 <head>
+	<meta name="generator" content="Hugo 0.58.3" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>atlassistant: Coming soon...</title>
+    <title>atlassistant</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    
+
+    <link rel="stylesheet" href="/css/styles.min.295c08b918dc287b8a6031c92a218d7f01f58cf2b9dab154d9a082b289e3d4ec.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js" integrity="sha256-Dul4c09cdrWKXVtallPxF558lwxMwCC8dXJdZ0PVW54=" crossorigin="anonymous"></script>
 </head>
-<body style="display: flex; height: 100vh; align-items: center; justify-content: center;">
-    <p style="font-family: Arial, sans-serif;">Coming soon...</p>
-</body>
+<body>
+<div class="cover">
+    <div class="narrow">
+        <img class="cover__logo" alt="atlassistant logo" src="/img/logo.svg" />
+        <h1 class="cover__title">atlas</h1>
+        <h2 class="cover__subtitle">An <strong>open-source</strong>, <strong>hackable</strong>, <strong>trustable</strong> assistant you can host yourself.</h2>
+        <div class="cover__actions">
+            <a href="https://pytlas.readthedocs.io" class="button" title="Read the docs">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Read the Docs</title><path d="M2.759 24l.664-.144c.207-.044.412-.085.619-.126.318-.062.637-.123.955-.182.24-.046.48-.085.721-.129l.055-.015c.25-.044.498-.09.747-.12l1.214-.179V-.001h-.042c-.63.004-1.256.016-1.884.036-.689.018-1.394.06-2.084.105-.299.021-.6.046-.899.07H2.78v23.784L2.759 24zM8.911.015v22.942c.861-.1 1.72-.182 2.582-.246 2.121-.161 4.248-.211 6.373-.151 1.128.034 2.253.099 3.374.192V1.503c-1.004-.229-2.012-.432-3.028-.607-1.968-.342-3.955-.581-5.947-.731C11.151.084 10.032.033 8.913.016h-.002zm10.763 14.797l-.046-.004-.561-.061c-1.399-.146-2.805-.242-4.207-.291-1.407-.045-2.815-.03-4.223.016h-.044c-.045 0-.091 0-.135-.016-.101-.03-.195-.074-.267-.149-.127-.136-.186-.315-.156-.495.008-.061.029-.105.054-.166.027-.044.063-.104.104-.134.043-.045.09-.075.143-.104.061-.03.121-.046.18-.061h.09c.195 0 .391-.016.57-.016 1.395-.029 2.773-.029 4.169.03 1.439.06 2.864.165 4.288.33l.151.015c.044.016.089.016.135.03.105.046.194.105.255.181.044.044.074.104.105.164.029.061.044.12.044.18.015.165-.044.33-.164.45-.046.046-.091.075-.135.105-.047.03-.105.044-.166.06-.03.016-.045.016-.089.016h-.047l-.048-.08zm.035-2.711c-.044 0-.044 0-.09-.006l-.555-.071c-1.395-.179-2.804-.3-4.198-.359-1.395-.075-2.805-.09-4.214-.06l-.046-.016c-.045-.015-.09-.015-.135-.029-.09-.03-.194-.09-.254-.166-.03-.045-.076-.104-.09-.148-.075-.166-.075-.361.014-.525.031-.061.061-.105.105-.15s.09-.09.15-.104c.061-.03.119-.06.18-.06l.09-.016.585-.015c1.396-.016 2.774.015 4.153.09 1.439.075 2.865.21 4.289.39l.149.016.091.014c.105.031.194.075.27.166.12.119.18.284.165.449 0 .061-.016.121-.045.165-.029.06-.061.104-.09.15-.03.044-.074.075-.136.12-.044.029-.104.045-.164.061l-.091.014H19.8l-.091.09zm0-2.711c-.044 0-.044 0-.09-.006l-.555-.08c-1.395-.19-2.789-.334-4.198-.428-1.395-.092-2.805-.135-4.214-.129h-.046l-.09-.016c-.059-.016-.104-.036-.164-.068-.15-.092-.256-.254-.285-.438 0-.061 0-.12.016-.18.014-.061.029-.117.059-.17.031-.054.076-.102.121-.144.074-.075.18-.126.285-.15.045-.011.089-.015.135-.015h.569c1.439.009 2.879.064 4.304.172 1.395.105 2.774.26 4.153.457l.15.021c.046.007.061.007.09.019.06.02.12.046.165.08.061.033.104.075.135.123.031.048.061.101.09.158.062.156.045.334-.029.479-.029.055-.061.105-.105.146-.075.074-.164.127-.27.15-.029.012-.046.012-.091.014l-.044.005h-.091zm0-2.712c-.044 0-.044 0-.09-.007l-.555-.09c-1.395-.225-2.789-.391-4.198-.496-1.395-.119-2.805-.179-4.214-.209h-.046l-.105-.014c-.061-.015-.115-.045-.165-.074-.053-.031-.099-.076-.14-.121-.036-.045-.068-.104-.094-.149-.02-.06-.037-.12-.044-.181-.016-.18.053-.371.181-.494.074-.075.176-.125.279-.15.045-.015.09-.015.135-.015.189 0 .38.005.57.008 1.437.034 2.871.113 4.304.246 1.387.119 2.77.3 4.145.524l.135.016c.04 0 .052 0 .09.014.062.016.112.046.165.076.046.029.09.074.125.119.091.135.135.301.105.465-.015.061-.031.105-.061.166-.03.045-.074.104-.12.135-.074.074-.165.119-.271.149h-.135l.004.082zm-15.67-.509c-.09 0-.181-.021-.271-.063-.194-.095-.314-.293-.329-.505 0-.057.015-.111.03-.165.014-.068.045-.133.09-.19.045-.065.104-.12.164-.162.077-.05.167-.076.241-.092l.48-.044c.659-.058 1.305-.105 1.949-.144h.06c.105.004.195.024.271.071.194.103.314.305.314.519 0 .055-.015.109-.029.161-.016.067-.045.132-.091.189-.044.075-.104.12-.165.165-.074.045-.15.074-.24.09-.104.015-.209.015-.314.03-.136.015-.286.015-.436.031l-1.168.088-.285.031c-.061.015-.122.015-.196.015l-.075-.025zm15.655-2.201l-.091-.01-.554-.1c-1.395-.234-2.805-.425-4.214-.564-1.395-.138-2.804-.225-4.214-.271h-.045l-.09-.018c-.061-.015-.105-.038-.165-.071-.045-.03-.091-.072-.135-.121-.12-.138-.165-.33-.12-.506.016-.061.045-.12.074-.18.031-.061.076-.105.121-.15.074-.076.18-.121.285-.15.045-.015.089-.015.135-.015l.584.015c1.395.061 2.774.15 4.154.301 1.439.148 2.864.359 4.288.6l.15.014c.046 0 .061 0 .09.016.06.015.12.045.165.074.135.105.225.256.239.421.016.06 0 .12-.015.181 0 .059-.029.119-.059.164-.031.045-.062.09-.105.135-.076.076-.181.12-.286.135l-.086.014h-.046l-.06.086zM4.022 3.199c-.086 0-.171-.019-.25-.056-.07-.033-.134-.079-.187-.137-.045-.053-.086-.112-.111-.181-.02-.049-.034-.101-.039-.156-.022-.214.078-.427.255-.546.078-.054.167-.086.26-.099.158-.014.314-.014.473-.029.65-.045 1.301-.075 1.949-.105h.048c.091.016.181.03.256.075.179.105.3.315.3.524 0 .061-.016.121-.03.166-.03.074-.06.135-.104.195-.047.06-.107.12-.182.15-.075.045-.165.075-.255.075-.104.014-.21.014-.33.014l-.449.031c-.405.029-.795.045-1.186.074l-.3.016c-.075.015-.134.015-.194.015l.076-.026z"></path></svg>
+                Read the docs
+            </a>
+            <a href="https://github.com/atlassistant/pytlas" class="button" title="Check the code">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                Check the code
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="demo">
+    <div class="narrow">
+        <div class="demo__content">
+            <div class="demo__snippets">
+                
+                
+                    
+                        <input class="demo__snippet" type="radio" name="snippet" checked>
+                    
+                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">from</span> pytlas <span style="color:#ff79c6">import</span> training, intent
+
+@training(<span style="color:#f1fa8c">&#39;en&#39;</span>) <span style="color:#6272a4"># Define some training data in your language</span>
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">greet_en_training</span>(): <span style="color:#ff79c6">return</span> <span style="color:#f1fa8c">&#34;&#34;&#34;
+</span><span style="color:#f1fa8c">%[greet]
+</span><span style="color:#f1fa8c">    hey ~[there?]
+</span><span style="color:#f1fa8c">    hello ~[there?]
+</span><span style="color:#f1fa8c">    what&#39;s up
+</span><span style="color:#f1fa8c">
+</span><span style="color:#f1fa8c">~[there]
+</span><span style="color:#f1fa8c">    there
+</span><span style="color:#f1fa8c">    you
+</span><span style="color:#f1fa8c">&#34;&#34;&#34;</span>
+<span style="color:#6272a4"># Trainings are written using a tiny interpreter agnostic</span>
+<span style="color:#6272a4"># language and is available at:</span>
+<span style="color:#6272a4"># https://github.com/atlassistant/chatl</span>
+
+@intent(<span style="color:#f1fa8c">&#39;greet&#39;</span>) <span style="color:#6272a4"># Handle the intent!</span>
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">on_greet</span>(request):
+    <span style="color:#6272a4"># And do whatever you want, such as answering</span>
+    request<span style="color:#ff79c6">.</span>agent<span style="color:#ff79c6">.</span>answer(<span style="color:#f1fa8c">&#39;Hello there!&#39;</span>)
+    <span style="color:#6272a4"># And returns to the asleep state using done()</span>
+    request<span style="color:#ff79c6">.</span>agent<span style="color:#ff79c6">.</span>done()
+</code></pre></div>
+                
+                    
+                        <input class="demo__snippet" type="radio" name="snippet">
+                    
+                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">from</span> pytlas <span style="color:#ff79c6">import</span> training, intent
+
+@training(<span style="color:#f1fa8c">&#39;en&#39;</span>)
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">lights_en_training</span>(): <span style="color:#ff79c6">return</span> <span style="color:#f1fa8c">&#34;&#34;&#34;
+</span><span style="color:#f1fa8c">%[lights_on]
+</span><span style="color:#f1fa8c">    turn lights on in @[room]
+</span><span style="color:#f1fa8c">    lights on in @[room]
+</span><span style="color:#f1fa8c">
+</span><span style="color:#f1fa8c">@[room](extensible=false)
+</span><span style="color:#f1fa8c">    kitchen
+</span><span style="color:#f1fa8c">    bedroom
+</span><span style="color:#f1fa8c">&#34;&#34;&#34;</span>
+
+@intent(<span style="color:#f1fa8c">&#39;lights_on&#39;</span>)
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">on_lights_on</span>(request):
+    <span style="color:#6272a4"># Extract the first room value</span>
+    room <span style="color:#ff79c6">=</span> request<span style="color:#ff79c6">.</span>intent<span style="color:#ff79c6">.</span>slot(<span style="color:#f1fa8c">&#39;room&#39;</span>)<span style="color:#ff79c6">.</span>first()<span style="color:#ff79c6">.</span>value
+    <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">not</span> room: <span style="color:#6272a4"># If there&#39;s none, ask for it</span>
+        <span style="color:#ff79c6">return</span> request<span style="color:#ff79c6">.</span>agent<span style="color:#ff79c6">.</span>answer(<span style="color:#f1fa8c">&#39;room&#39;</span>, <span style="color:#f1fa8c">&#39;Which room?&#39;</span>)
+    <span style="color:#6272a4"># Else, do something with the room, control a philips Hue or whatever</span>
+    <span style="color:#ff79c6">return</span> request<span style="color:#ff79c6">.</span>agent<span style="color:#ff79c6">.</span>done()
+</code></pre></div>
+                
+                    
+                        <input class="demo__snippet" type="radio" name="snippet">
+                    
+                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">from</span> pytlas <span style="color:#ff79c6">import</span> training, intent
+
+@training(<span style="color:#f1fa8c">&#39;en&#39;</span>)
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">temperature_en_training</span>(): <span style="color:#ff79c6">return</span> <span style="color:#f1fa8c">&#34;&#34;&#34;
+</span><span style="color:#f1fa8c">%[set_temperature]
+</span><span style="color:#f1fa8c">    raise the temperature to @[temperature_value]
+</span><span style="color:#f1fa8c">    set the temperature to @[temperature_value]
+</span><span style="color:#f1fa8c">    lower the temperature to @[temperature_value]
+</span><span style="color:#f1fa8c">
+</span><span style="color:#f1fa8c">@[temperature_value](type=temperature)
+</span><span style="color:#f1fa8c">    30 degree
+</span><span style="color:#f1fa8c">    20 degree
+</span><span style="color:#f1fa8c">    13 degree
+</span><span style="color:#f1fa8c">&#34;&#34;&#34;</span>
+
+<span style="color:#6272a4"># Possibilities are infinite, check the documentation!</span>
+<span style="color:#6272a4"># https://pytlas.readthedocs.io/en/latest/</span>
+
+@intent(<span style="color:#f1fa8c">&#39;set_temperature&#39;</span>)
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">on_set_temperature</span>(request):
+    temp <span style="color:#ff79c6">=</span> request<span style="color:#ff79c6">.</span>intent<span style="color:#ff79c6">.</span>slot(<span style="color:#f1fa8c">&#39;temperature_value&#39;</span>)<span style="color:#ff79c6">.</span>first()<span style="color:#ff79c6">.</span>value
+    <span style="color:#6272a4"># Put your logic to set the temperature here!</span>
+    request<span style="color:#ff79c6">.</span>agent<span style="color:#ff79c6">.</span>answer(f<span style="color:#f1fa8c">&#39;Setting temperature to {temp}&#39;</span>)
+    request<span style="color:#ff79c6">.</span>agent<span style="color:#ff79c6">.</span>done()
+</code></pre></div>
+                
+            </div>
+            <div class="demo__chatbox chatbox" id="chatbox">
+    <div class="chatbox__messages" id="chatbox-messages">
+        <div class="chatbox__status">Connecting to the demo instance...</div>
+    </div>
+    <form method="POST" action="/" class="chatbox__panel" onsubmit="return submitMessage()">
+        <input type="text" class="chatbox__input" id="chatbox-input">
+        <button type="submit" class="chatbox__send">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
+        </button>
+    </form>
+</div>
+            <div class="demo__home home">
+    <div class="home__name">Your connected house</div>
+    <div class="home__stuff">
+        <div id="kitchen" class="light light--off stuff">
+    <svg class="light__off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.734c0 4.164-3.75 6.98-3.75 10.266h-1.992c.001-2.079.996-3.826 1.968-5.513.913-1.585 1.774-3.083 1.774-4.753 0-3.108-2.518-4.734-5.004-4.734-2.482 0-4.996 1.626-4.996 4.734 0 1.67.861 3.168 1.774 4.753.972 1.687 1.966 3.434 1.967 5.513h-1.991c0-3.286-3.75-6.103-3.75-10.266 0-4.343 3.498-6.734 6.996-6.734 3.502 0 7.004 2.394 7.004 6.734zm-4 11.766c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm0 2c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm-1.701 3.159c-.19.216-.465.341-.752.341h-1.094c-.287 0-.562-.125-.752-.341l-1.451-1.659h5.5l-1.451 1.659zm-3.629-16.347l-1.188-.153c.259-1.995 1.5-3.473 3.518-3.847l.219 1.177c-1.947.361-2.433 1.924-2.549 2.823z"/></svg>
+    <svg class="light__on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 19h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0 2h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm.25 2h-4.5l1.188.782c.154.138.38.218.615.218h.895c.234 0 .461-.08.615-.218l1.187-.782zm3.75-13.799c0 3.569-3.214 5.983-3.214 8.799h-5.572c0-2.816-3.214-5.23-3.214-8.799 0-3.723 2.998-5.772 5.997-5.772 3.001 0 6.003 2.051 6.003 5.772zm4-.691v1.372h-2.538c.02-.223.038-.448.038-.681 0-.237-.017-.464-.035-.69h2.535zm-10.648-6.553v-1.957h1.371v1.964c-.242-.022-.484-.035-.726-.035-.215 0-.43.01-.645.028zm-3.743 1.294l-1.04-1.94 1.208-.648 1.037 1.933c-.418.181-.822.401-1.205.655zm10.586 1.735l1.942-1.394.799 1.115-2.054 1.473c-.191-.43-.423-.827-.687-1.194zm-3.01-2.389l1.038-1.934 1.208.648-1.041 1.941c-.382-.254-.786-.473-1.205-.655zm-10.068 3.583l-2.054-1.472.799-1.115 1.942 1.393c-.264.366-.495.763-.687 1.194zm13.707 6.223l2.354.954-.514 1.271-2.425-.982c.21-.397.408-.812.585-1.243zm-13.108 1.155l-2.356 1.06-.562-1.251 2.34-1.052c.173.433.371.845.578 1.243zm-1.178-3.676h-2.538v-1.372h2.535c-.018.226-.035.454-.035.691 0 .233.018.458.038.681z"/></svg>
+    <div class="stuff__name">kitchen</div>
+</div>
+        <div id="bedroom" class="light light--off stuff">
+    <svg class="light__off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.734c0 4.164-3.75 6.98-3.75 10.266h-1.992c.001-2.079.996-3.826 1.968-5.513.913-1.585 1.774-3.083 1.774-4.753 0-3.108-2.518-4.734-5.004-4.734-2.482 0-4.996 1.626-4.996 4.734 0 1.67.861 3.168 1.774 4.753.972 1.687 1.966 3.434 1.967 5.513h-1.991c0-3.286-3.75-6.103-3.75-10.266 0-4.343 3.498-6.734 6.996-6.734 3.502 0 7.004 2.394 7.004 6.734zm-4 11.766c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm0 2c0 .276-.224.5-.5.5h-5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h5c.276 0 .5.224.5.5zm-1.701 3.159c-.19.216-.465.341-.752.341h-1.094c-.287 0-.562-.125-.752-.341l-1.451-1.659h5.5l-1.451 1.659zm-3.629-16.347l-1.188-.153c.259-1.995 1.5-3.473 3.518-3.847l.219 1.177c-1.947.361-2.433 1.924-2.549 2.823z"/></svg>
+    <svg class="light__on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 19h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0 2h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm.25 2h-4.5l1.188.782c.154.138.38.218.615.218h.895c.234 0 .461-.08.615-.218l1.187-.782zm3.75-13.799c0 3.569-3.214 5.983-3.214 8.799h-5.572c0-2.816-3.214-5.23-3.214-8.799 0-3.723 2.998-5.772 5.997-5.772 3.001 0 6.003 2.051 6.003 5.772zm4-.691v1.372h-2.538c.02-.223.038-.448.038-.681 0-.237-.017-.464-.035-.69h2.535zm-10.648-6.553v-1.957h1.371v1.964c-.242-.022-.484-.035-.726-.035-.215 0-.43.01-.645.028zm-3.743 1.294l-1.04-1.94 1.208-.648 1.037 1.933c-.418.181-.822.401-1.205.655zm10.586 1.735l1.942-1.394.799 1.115-2.054 1.473c-.191-.43-.423-.827-.687-1.194zm-3.01-2.389l1.038-1.934 1.208.648-1.041 1.941c-.382-.254-.786-.473-1.205-.655zm-10.068 3.583l-2.054-1.472.799-1.115 1.942 1.393c-.264.366-.495.763-.687 1.194zm13.707 6.223l2.354.954-.514 1.271-2.425-.982c.21-.397.408-.812.585-1.243zm-13.108 1.155l-2.356 1.06-.562-1.251 2.34-1.052c.173.433.371.845.578 1.243zm-1.178-3.676h-2.538v-1.372h2.535c-.018.226-.035.454-.035.691 0 .233.018.458.038.681z"/></svg>
+    <div class="stuff__name">bedroom</div>
+</div>
+        <div id="vacuum" class="vacuum stuff">
+    
+    <svg id="vacuum-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><rect x="5" y="5" fill="none" width="90" height="90"/><g><path d="M94.208,52.869c-0.399-0.312-0.927-0.4-1.405-0.237l-3.399,1.17c0.104-1.068,0.162-2.143,0.177-3.213l4.317-1.486   c0.628-0.216,1.039-0.823,1.004-1.487c-0.601-11.5-5.537-22.217-13.9-30.177C72.61,9.45,61.605,5.05,50.015,5.05   c-11.694,0-22.771,4.467-31.188,12.58c-8.396,8.09-13.27,18.949-13.727,30.575c-0.026,0.657,0.382,1.254,1.004,1.468l4.331,1.492   c0.032,1.079,0.106,2.158,0.223,3.229l-3.372-1.161c-0.482-0.166-1.015-0.074-1.413,0.243c-0.399,0.317-0.608,0.817-0.554,1.324   c1.165,10.97,6.33,21.104,14.544,28.539c8.275,7.488,18.982,11.612,30.152,11.612c11.275,0,22.062-4.194,30.367-11.811   c8.256-7.568,13.364-17.854,14.39-28.961C94.818,53.675,94.606,53.183,94.208,52.869z M56.047,8.461   c0.21,0.03,0.419,0.063,0.626,0.098c0.121,0.019,0.243,0.036,0.363,0.056c0.194,0.034,0.389,0.069,0.584,0.105   c0.132,0.024,0.267,0.047,0.4,0.072c0.172,0.034,0.345,0.07,0.518,0.106c0.152,0.031,0.307,0.062,0.46,0.095   c0.144,0.031,0.287,0.066,0.431,0.1c0.179,0.041,0.36,0.08,0.54,0.124c0.104,0.026,0.211,0.054,0.316,0.081   c0.216,0.055,0.432,0.108,0.646,0.165c0.053,0.014,0.104,0.029,0.154,0.043c1.789,0.488,3.531,1.091,5.22,1.8   c0.059,0.025,0.117,0.049,0.175,0.074c0.172,0.072,0.341,0.149,0.512,0.224c0.13,0.059,0.264,0.116,0.396,0.175   c0.118,0.054,0.234,0.11,0.353,0.166c0.184,0.085,0.366,0.169,0.548,0.257c0.077,0.038,0.151,0.076,0.228,0.113   c0.224,0.11,0.447,0.22,0.669,0.334c0.038,0.019,0.075,0.041,0.112,0.059c0.262,0.135,0.521,0.272,0.779,0.413   c0.003,0.002,0.004,0.003,0.005,0.003c3.192,1.742,6.174,3.908,8.866,6.471c6.349,6.045,10.59,13.814,12.251,22.284   c0,0.003,0,0.005,0.001,0.009c0.06,0.306,0.116,0.615,0.169,0.923c0.006,0.031,0.01,0.061,0.016,0.091   c0.048,0.283,0.093,0.566,0.137,0.852c0.01,0.062,0.018,0.124,0.026,0.186c0.036,0.256,0.072,0.512,0.104,0.77   c0.013,0.104,0.023,0.208,0.036,0.313c0.024,0.218,0.052,0.436,0.073,0.654c0.024,0.227,0.044,0.456,0.063,0.684   c0.01,0.098,0.02,0.195,0.027,0.292l-2.205,0.759l-2.044,0.703c0,0,0,0,0,0l-4.579,1.577c-0.077-8.708-3.503-16.883-9.67-23.048   c-5.459-5.459-12.492-8.766-20.072-9.509c1.757-1.098,2.929-3.05,2.929-5.271c0-1.311-0.408-2.526-1.104-3.529   c0.201,0.024,0.4,0.052,0.602,0.08C55.82,8.432,55.934,8.444,56.047,8.461z M86.15,56.184l-3.973,1.368   c0.452-1.942,0.729-3.941,0.823-5.959l3.601-1.239c-0.019,1.805-0.167,3.622-0.447,5.405C86.132,55.903,86.133,56.045,86.15,56.184   z M50.001,7.446c2.438,0,4.42,1.983,4.42,4.42c0,2.438-1.982,4.421-4.42,4.421c-2.439,0-4.422-1.983-4.422-4.421   C45.579,9.429,47.562,7.446,50.001,7.446z M72.09,27.911c5.9,5.899,9.149,13.744,9.149,22.089c0,8.344-3.249,16.189-9.149,22.089   c-5.9,5.9-13.744,9.15-22.089,9.15s-16.189-3.25-22.089-9.15c-3.683-3.684-6.333-8.126-7.806-12.973l-0.234-0.862   c-0.562-2.066-0.913-4.212-1.04-6.374l-0.023-0.4c-0.002-0.042-0.008-0.082-0.016-0.123c-0.019-0.451-0.031-0.902-0.031-1.356   c0-8.344,3.249-16.189,9.149-22.089c5.9-5.9,13.745-9.149,22.089-9.149S66.189,22.011,72.09,27.911z M8.135,47.22   c0.682-10.433,5.197-20.157,12.759-27.444c6.618-6.377,14.997-10.34,23.998-11.433c-0.694,1.002-1.101,2.216-1.101,3.524   c0,2.221,1.172,4.172,2.93,5.271c-7.583,0.743-14.616,4.05-20.074,9.509C20.409,32.884,16.974,41.178,16.974,50   c0,0.088,0.002,0.175,0.003,0.263L8.135,47.22z M13.94,56.338c-0.308-1.772-0.485-3.589-0.531-5.411l3.637,1.251   c0.133,2.043,0.449,4.05,0.944,6l-4.043-1.392C13.966,56.639,13.966,56.488,13.94,56.338z M78.368,80.941   c-7.754,7.113-17.824,11.027-28.354,11.027c-10.429,0-20.427-3.851-28.153-10.84C14.805,74.74,10.13,66.161,8.6,56.837l3.387,1.165   l0,0l6.611,2.277c1.59,4.875,4.317,9.343,8.049,13.074c6.237,6.237,14.532,9.673,23.354,9.673c8.822,0,17.115-3.436,23.353-9.673   c3.895-3.894,6.696-8.59,8.252-13.713l9.918-3.417C90.114,65.692,85.476,74.425,78.368,80.941z"/><path d="M24.128,50c0,6.911,2.691,13.408,7.578,18.295c4.886,4.887,11.384,7.578,18.295,7.578c6.909,0,13.407-2.691,18.295-7.578   c4.888-4.888,7.577-11.384,7.577-18.295c0-2.137-1.738-3.875-3.875-3.875S68.123,47.863,68.123,50   c0,4.842-1.885,9.392-5.306,12.816c-3.424,3.422-7.976,5.307-12.816,5.307c-4.841,0-9.393-1.885-12.815-5.307   c-3.424-3.425-5.309-7.975-5.309-12.816c0-2.137-1.738-3.875-3.875-3.875S24.128,47.863,24.128,50z M28.002,47.913   c1.15,0,2.087,0.937,2.087,2.087c0,5.319,2.071,10.319,5.832,14.08c3.76,3.76,8.76,5.832,14.08,5.832   c5.318,0,10.319-2.072,14.08-5.832c3.761-3.761,5.831-8.761,5.831-14.08c0-1.15,0.935-2.087,2.086-2.087S74.085,48.85,74.085,50   c0,6.433-2.506,12.48-7.053,17.031c-4.551,4.549-10.6,7.053-17.031,7.053c-6.434,0-12.482-2.504-17.03-7.053   c-4.55-4.549-7.054-10.599-7.054-17.031C25.917,48.85,26.852,47.913,28.002,47.913z"/><path d="M50.001,15.394c1.944,0,3.525-1.583,3.525-3.527c0-1.944-1.581-3.526-3.525-3.526c-1.945,0-3.527,1.583-3.527,3.526   C46.474,13.812,48.056,15.394,50.001,15.394z M50.001,9.533c1.287,0,2.333,1.047,2.333,2.334c0,1.288-1.046,2.335-2.333,2.335   s-2.334-1.047-2.334-2.335C47.667,10.58,48.714,9.533,50.001,9.533z"/></g></svg>
+    <div class="stuff__name">vacuum</div>
+</div>
+        <div id="19°C" class="stuff">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.5 2c.827 0 1.5.673 1.5 1.5v7.525c0 1.569.514 2.287 1.411 3.05 1.01.858 1.589 2.106 1.589 3.425 0 2.481-2.019 4.5-4.5 4.5s-4.5-2.019-4.5-4.5c0-1.319.579-2.567 1.59-3.425.896-.761 1.41-1.48 1.41-3.05v-7.525c0-.827.673-1.5 1.5-1.5zm0-2c-1.933 0-3.5 1.567-3.5 3.5v7.525c0 .587-.258 1.145-.705 1.525-1.403 1.192-2.295 2.965-2.295 4.95 0 3.59 2.909 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-1.985-.892-3.758-2.295-4.95-.447-.38-.705-.938-.705-1.525v-7.525c0-1.933-1.567-3.5-3.5-3.5zm2.107 14.718c-1.012-.89-1.607-1.734-1.607-3.22v-6.498h-1v6.498c0 1.484-.597 2.332-1.607 3.22-.794.698-1.393 1.642-1.393 2.782 0 1.933 1.567 3.5 3.5 3.5s3.5-1.567 3.5-3.5c0-1.14-.599-2.083-1.393-2.782zm11.393-8.718h-3v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg>
+    <div class="stuff__name" id="temperature">19°C</div>
+</div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="sections">
+
+
+    <section class="narrow">
+    <div class="section">
+        <div class="section__media">
+            <a href="/img/overview.png" title="An assistant you truly own"><img alt="An assistant you truly own" src="/img/overview.png" /></a>
+        </div>
+        <div class="section__content">
+            <h2 class="section__title">An assistant you truly own</h2>
+            <p>Your assistant is powered by the <strong>open-source</strong> python library <a href="https://github.com/atlassistant/pytlas">pytlas</a> which will extract meaningful data from human language sentences and call your own code when its done.</p>
+
+<p>It offers an <strong>easy to use API</strong> to make writing skills as painless as possible.</p>
+
+<p>You can embed the library yourself or use some already developed application such as the <a href="https://github.com/atlassistant/pytlas-broker">broker</a> which will expose your assistant across <strong>MQTT</strong> and other channels.</p>
+
+        </div>
+    </div>
+</section>
+
+    <section class="narrow">
+    <div class="section">
+        <div class="section__media">
+            <a href="/img/hackable.jpg" title="Hackable at its core"><img alt="Hackable at its core" src="/img/hackable.jpg" /></a>
+        </div>
+        <div class="section__content">
+            <h2 class="section__title">Hackable at its core</h2>
+            <p><strong>Expose</strong> your assistant however you like, <strong>write</strong> or <strong>use</strong> community skills and you&rsquo;re good to go!</p>
+
+<p>You got the power and the only limit is your imagination.</p>
+
+<p>Got a Raspberry Pi and a GSM Hat? Host pytlas and expose it through simple SMS and embrace your <strong>low-tech</strong> personal assistant!</p>
+
+        </div>
+    </div>
+</section>
+
+</div>
+
+
+
+<section class="narrow">
+    <div class="section section--contribute">
+        <div class="section__content">
+            <p>Want to help us build an <strong>open-source assistant</strong> and <strong>shape</strong> the future of <strong>atlas</strong>? Join us and <a href="https://github.com/atlassistant/pytlas#contributing">start contributing</a> 🙌!</p>
+
+        </div>
+    </div>
+</section>
+
+        <footer class="footer">
+            <div class="narrow">
+                <div class="footer__content">
+                    <p>Icons by <a href="https://simpleicons.org/" title="SimpleIcons">simpleicons</a>, <a href="https://iconmonstr.com/" title="iconmonstr">iconmonstr.com</a> and Robot vacuum by Tinashe Mugayi from <a href="https://thenounproject.com/" title="The Noun Project">the Noun Project</a></p>
+                    <ul class="footer__links">
+                        
+                        <li><a href="https://github.com/atlassistant/pytlas" title="Check &amp; contribute to the code">Check &amp; contribute to the code</a></li>
+                        
+                        <li><a href="https://pytlas.readthedocs.io" title="Read the official documentation">Read the official documentation</a></li>
+                        
+                        <li><a href="https://liberapay.com/YuukanOO" title="Donate ❤">Donate ❤</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script type="text/javascript" src="/js/atlassistant.min.8802ff760f74273697b2e6c9d15f0d182098a939d77adf324c4458aab2df1e8f.js"></script>
+    </body>
 </html>
